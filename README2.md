@@ -46,7 +46,7 @@ class Reviewer(Mentor):
             return 'Ошибка'
 
 
-# Создаем экземпляры
+
 best_student = Student('Ruoy', 'Eman', 'male')
 best_student.courses_in_progress += ['Python', 'Git']
 
@@ -56,13 +56,13 @@ cool_lecturer.courses_attached += ['Python']
 cool_reviewer = Reviewer('Some', 'Reviewer')
 cool_reviewer.courses_attached += ['Python']
 
-# Выставляем оценки
+
 cool_reviewer.rate_hw(best_student, 'Python', 10)
 cool_reviewer.rate_hw(best_student, 'Python', 9)
 
 best_student.rate_lecturer(cool_lecturer, 'Python', 10)
 best_student.rate_lecturer(cool_lecturer, 'Python', 8)
 
-# Проверяем результаты
+
 print("Оценки студента:", best_student.grades)
 print("Оценки лектора:", cool_lecturer.grades)
